@@ -1,8 +1,8 @@
 def selection_sort(xs):
-    for i in range(len(xs) - 1):  # The last value will automatically be in correct position.
+    for i in range(len(xs)):
         # Find minimum value in unsorted region.
         min_index = i
-        for j in range(i + 1, len(xs)):
+        for j in range(i, len(xs)):
             # Update min_index if the value at j is lower than current minimum value.
             if xs[j] < xs[min_index]:
                 min_index = j
